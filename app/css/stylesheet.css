@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* no white border*/
+	html,body {
+	margin:0;
+	padding:0;
+}
+
+/* header & Nav bar*/
+h1 {
+	padding-left: 20px;
+	font-size: 2em;
+	color: white; 
+}
+#recyclelogo {
+	width: 200px;
+	padding-left: 50px;
+}
+/* Header Image*/
+.fpheader {
+	background-image: url(../images/bike-1720620_1920.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin-top: -40px;
+}
+.fpheader > h2 {
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 100px;
+}
+.contactheader {
+	background-image: url(../images/sunset-1208263_1920.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin-top: -40px;
+}
+
+.contactheader > h2 {
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 100px;
+}
+.aboutheader {
+	background-image: url(../images/amsterdam-1696937_1920.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin-top: -40px;
+}
+
+.aboutheader > h2 {
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 100px;
+}
+.toursheader {
+	background-image: url(../images/bike-807355_1920.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	margin-top: -40px;
+}
+
+.toursheader > h2 {
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 100px;
+}
+/* Navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+}
+
+li {
+    float: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+	text-transform: uppercase;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #B2FFCB;
+	color: black;
+}
+
+
+.fph3, li a, h2 {
+	font-family: 'Cambria', "Hoefler Text", "Liberation Serif", 'Times', "Times New Roman", "serif";
+}
+h3 {
+	font-size: 2em;
+	padding-left: 20px;
+}
+
+p {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", 'Helvetica', 'Arial', "sans-serif";
+	padding: 20px;
+	font-size: 1.2em;
+}
+/* Main Container*/
+.container1 {
+	padding: 30px 0 30px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-evenly;
+	
+}
+
+.container1 div {
+	padding: 10px;
+	flex-basis: 30%;
+	
+}
+
+.box1, .box2 {
+	background-color: #ABF5C3;
+	
+}
+
+.button {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+}
+.button:hover {
+	background-color: #333;
+}
+/* About */
+.aboutgrid {
+	display: grid;
+	padding: 50px;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+
+.aboutgrid div:nth-child(even) {
+	background-color: #ABF5C3; 
+}
+
+
+.aboutgrid div:nth-child(odd) {
+	background-color: #B2FFCB;
+}
+/* Contact */
+.contactgrid {
+	display: grid;
+	padding: 50px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"contact"
+}
+
+.contact {
+	grid-area: contact;
+}
+
+
+input[type=text], select, textarea {
+	width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+/* Footer*/
+#footer {
+	clear: both;
+	background-color: #222;
+	height: 200px;
+	text-align: center;
+	margin: -15px 0 0 0;
+}
+
+#footer p{
+	color: white;
+}
+/* Tours */
+
+.toursgrid {
+	display: grid; 
+	padding: 50px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"picbryggen"
+		"txtbryggen"
+		"picgrieg"
+		"txtgrieg"
+		"picakvariet"
+		"txtakvariet"
+		"picbull"
+		"txtbull"
+}
+.toursgrid div:nth-child(even) {
+	background-color: #ABF5C3; 
+}
+
+
+.toursgrid div:nth-child(odd) {
+	background-color: #B2FFCB;
+}
+
+#picbryggen {	grid-area: picbryggen;}
+
+#picgrieg {	grid-area: picgrieg;}
+
+#picakvariet {	grid-area: picakvariet;}
+
+#picbull {	grid-area: picbull;}
+
+#txtbryggen {	grid-area: txtbryggen;}
+
+#txtgrieg {	grid-area: txtgrieg;}
+
+#txtakvariet {	grid-area: txtakvariet;}
+
+#txtbull {	grid-area: txtbull;}
+
+.toursgrid img {
+	width: 100%;
+	padding: 0px;
+	
+}
+
+/*For lower resolutions*/
+@media screen and (min-width: 980px){
+	.container1 {
+    flex-direction: row;
+	}
+		li {
+    float: right;
+	}	
+	.aboutgrid {
+	display: grid;
+	padding: 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+	}
+	.contactgrid {
+	display: grid;
+	padding: 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		". contact ."
+	}
+	.toursgrid {
+	display: grid; 
+	padding: 50px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"picbryggen txtbryggen txtbryggen"
+		"picgrieg txtgrieg txtgrieg"
+		"picakvariet txtakvariet txtakvariet"
+		"picbull txtbull txtbull"
+	}
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
