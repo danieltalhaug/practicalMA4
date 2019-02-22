@@ -14,4 +14,6 @@ gulp.task('compress-images', () => {
         .pipe(gulp.dest('dist/images'))
 });
 
-gulp.task('default', ['minify-css','compress-images']);
+gulp.task('default', ['minify-css','compress-images'], function() {
+  gulp.watch("app/css/*.css", ['minify-css']);
+});
